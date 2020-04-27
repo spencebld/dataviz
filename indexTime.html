@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Sketch Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="sketch.css" />
+        <script src="p5.min.js"></script>
+        <script src="sketchTime.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="title">
+                <h1>The Spending Journal of Spence Blood</h1>
+            </div>
+            <div id="information">
+                <div id="key">
+                    <div id="keyTitle">
+                        <h2>KEY</h2>
+                    </div>
+                    <div id="keyContent">
+                        <div class="categoryContainer" id="nightlife">
+                            <div style="background-color: #FB60EB;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Nightlife</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="groceries">
+                            <div style="background-color: #06D8B2;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Groceries</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="subscription">
+                            <div style="background-color: #60BAFB;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Subscription</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="transportation">
+                            <div style="background-color: #FF9432;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Transportation</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="food">
+                            <div style="background-color: #FA4A4A;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Food</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="utilities">
+                            <div style="background-color: #FBCF60;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Utitities</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="treat">
+                            <div style="background-color: #AD60FB;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Treat</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="gift">
+                            <div style="background-color: #6360FB;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Gift</p>
+                            </div>
+                        </div>
+                        <div class="categoryContainer" id="personalCare">
+                            <div style="background-color: #68FBE9;" class="categoryCircle">
+
+                            </div>
+                            <div class="categoryNameContainer">
+                                <p class="categoryName">Personal Care</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="filter">
+                    <div id="filterTitle">
+                        <h2>FILTER</h2>
+                    </div>
+                    <div id="filterIcons">
+                        <a href="index.html"><div class="icon">
+                            <img class="iconImg" src ="assets/clock.svg">
+                        </div>
+                        </a>
+                        <a href="indexPeople.html"><div class="icon">
+                            <img src ="assets/people.svg">
+                        </div>
+                        </a>
+                        <a href="indexTime.html"><div class="iconActive">
+                            <img src ="assets/moon.svg">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+                
+            let listener = null;
+            document.getElementById('gift').onmouseenter = function(){
+                listener = 'gift'
+            }
+            document.getElementById('gift').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('personalCare').onmouseenter = function(){
+                listener = 'personalCare'
+            }
+            document.getElementById('personalCare').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('food').onmouseenter = function(){
+                listener = 'food'
+            }
+            document.getElementById('food').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('groceries').onmouseenter = function(){
+                listener = 'groceries'
+            }
+            document.getElementById('groceries').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('subscription').onmouseenter = function(){
+                listener = 'subscription'
+            }
+            document.getElementById('subscription').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('transportation').onmouseenter = function(){
+                listener = 'transportation'
+            }
+            document.getElementById('transportation').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('treat').onmouseenter = function(){
+                listener = 'treat'
+            }
+            document.getElementById('treat').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('nightlife').onmouseenter = function(){
+                listener = 'nightlife'
+            }
+            document.getElementById('nightlife').onmouseleave = function(){
+                listener = 'null'
+            }
+            document.getElementById('utilities').onmouseenter = function(){
+                listener = 'utilities'
+            }
+            document.getElementById('utilities').onmouseleave = function(){
+                listener = 'null'
+            }
+            </script>
+
+
+        <div id="separatorLine">
+        </div>
+        <div id ="transactionWindowBig">
+            <h2>TRANSACTION</h2>
+        </div>
+        <div id="sketch">
+        </div>
+
+    </body>
+</html>
